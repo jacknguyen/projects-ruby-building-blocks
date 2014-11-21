@@ -1,6 +1,5 @@
 def caesar_cipher string, num
   words = string.split
-  # print words
   words.map! do |word|
     word.split('').map! do |letter|
       if ((65..90).include? letter.ord) || ((97..122).include? letter.ord)
@@ -20,7 +19,6 @@ def caesar_cipher string, num
 
     end
   end
-
   words.map! { |word| word.join('') }
 
   words = words.join(' ')
